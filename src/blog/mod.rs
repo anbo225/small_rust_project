@@ -148,7 +148,9 @@ mod tests {
 
         post.request_review();
         post.add_text(" World");
+        post.request_review();
         assert_eq!(post.content(), "");
+        post.request_review();
         post.add_text(" World");
 
         post.request_review();
